@@ -1,16 +1,18 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+<div class="about-title">
+<h1>Hey, I'm <span style="color: #8103ff;">ProfessorShroom</span></h1>
+</div>
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+<span style="font-size: 20px;">I'm a computer technician, gamer, car enthusiast, occasional coder and designer.</span>
 
-What else do you need?
+<span style="font-size: 20px;">I often start projects for my current needs in computers or my cars. So this a place for my current, future and past projects!</span>
 
-### My story
+<span style="font-size: 20px;"> This page is just a bit fun, I was always sad that whoever owns [WUPHF.com](https://wuphf.com) never did anything with it, so I did.</span>
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+<br>
+
+The best way to contact me is via email which you can find below.
