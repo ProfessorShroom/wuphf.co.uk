@@ -140,7 +140,7 @@ img::-moz-selection {
 }
 
 img {
-  max-width: 100%;
+  max-width: 600%;
 }
 
 .linked-section {
@@ -383,7 +383,7 @@ img {
   {% endunless %}
 }
 .navbar-custom .avatar-container .avatar-img {
-  width: 100%;
+  width: 600%;
   {% unless site.round-avatar == false %}
     border-radius: 50%;
   {% endunless %}
