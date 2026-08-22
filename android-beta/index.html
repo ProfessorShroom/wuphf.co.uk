@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Android Beta — WUPHF Fan App</title>
+    <style>
+      :root {
+        --navy: #1c1c1e;
+        --orange: #ff6b1a;
+        --cream: #fff6ec;
+        --rule: #e4dacb;
+        --text: #2a2a2c;
+        --muted: #6b6b6e;
+        --green: #1a7f4e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--text);
+        font-family:
+          -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      .wrap {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 56px 24px 96px;
+      }
+
+      header {
+        border-bottom: 3px solid var(--navy);
+        padding-bottom: 20px;
+        margin-bottom: 36px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--orange);
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 32px;
+        line-height: 1.15;
+        margin: 0 0 6px;
+        color: var(--navy);
+        letter-spacing: -0.01em;
+      }
+
+      .meta {
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      h2 {
+        font-size: 19px;
+        color: var(--navy);
+        margin: 40px 0 12px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      p {
+        margin: 0 0 14px;
+        font-size: 16px;
+      }
+
+      ul,
+      ol {
+        margin: 0 0 14px;
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+
+      .callout {
+        background: #ffffff;
+        border: 1px solid var(--rule);
+        border-left: 4px solid var(--orange);
+        border-radius: 4px;
+        padding: 16px 18px;
+        margin: 0 0 28px;
+        font-size: 15px;
+      }
+
+      .callout strong {
+        color: var(--navy);
+      }
+
+      a {
+        color: var(--orange);
+        text-decoration: underline;
+      }
+      a:hover {
+        color: var(--navy);
+      }
+
+      .btn {
+        display: inline-block;
+        margin: 6px 0 0;
+        padding: 12px 20px;
+        background: var(--navy);
+        color: #fff !important;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 15px;
+        text-decoration: none !important;
+      }
+      .btn:hover {
+        background: var(--orange);
+      }
+
+      .step {
+        display: flex;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+      .step-num {
+        flex: 0 0 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--navy);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .step-body p {
+        margin: 0;
+      }
+      .step-body strong {
+        color: var(--navy);
+      }
+
+      footer {
+        margin-top: 56px;
+        padding-top: 20px;
+        border-top: 1px solid var(--rule);
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      code {
+        background: #fff;
+        border: 1px solid var(--rule);
+        border-radius: 3px;
+        padding: 1px 6px;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <span class="eyebrow">WUPHF Fan App</span>
+        <h1>Android Beta Testing</h1>
+        <div class="meta">Closed testing — help get the app to production</div>
+      </header>
+
+      <p>
+        The WUPHF Android app is currently in
+        <strong>closed testing</strong> on Google Play. Before it can go live
+        to everyone, Google requires a small group of people to opt in and
+        test it first. That's where you come in — thank you!
+      </p>
+
+      <div class="callout">
+        <strong>The short version:</strong> join the Google Group below, then
+        open the opt-in link on your Android phone and follow the prompts to
+        install from Google Play. It takes a couple of minutes.
+      </div>
+
+      <h2>How to join</h2>
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <p>
+            <strong>Join the tester Google Group.</strong> This is how Google
+            checks you're allowed to install the test build — it needs to be
+            done with the same Google account you'll use on your Android
+            phone.
+          </p>
+          <a
+            class="btn"
+            href="https://groups.google.com/g/wuphf-tester"
+            target="_blank"
+            rel="noopener"
+            >Join the Google Group</a
+          >
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <p>
+            <strong>Open the opt-in link on your Android phone</strong>, using
+            the same Google account you just joined the group with, and tap
+            "Become a tester".
+          </p>
+          <a
+            class="btn"
+            href="https://play.google.com/apps/testing/com.professorshroom.wuphf"
+            target="_blank"
+            rel="noopener"
+            >Become a Tester</a
+          >
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <p>
+            <strong>Install the app from Google Play</strong> — the opt-in
+            page will link you straight to the listing. It can take a little
+            while (sometimes up to a few hours) for Google to sync your
+            account after joining the group, so if the opt-in page doesn't
+            work right away, give it some time and try again.
+          </p>
+        </div>
+      </div>
+
+      <h2>Why this is here temporarily</h2>
+      <p>
+        Google requires at least 12 testers to opt in and stay active for
+        <strong>14 days</strong> before an app can move from closed testing to
+        production. Once that's done, WUPHF will be publicly available on
+        Google Play and this page (and the tester group) will no longer be
+        needed. If you're reading this and the app is already live, thank you
+        for the help — you can go ahead and grab it from the Play Store
+        directly!
+      </p>
+
+      <h2>Feedback and bugs</h2>
+      <p>
+        Found something broken, or have thoughts on the app? Post in the
+        <a href="https://groups.google.com/g/wuphf-tester" target="_blank" rel="noopener"
+          >Google Group</a
+        >
+        or email
+        <a href="mailto:app@wuphf.co.uk">app@wuphf.co.uk</a>.
+      </p>
+
+      <footer>
+        WUPHF Fan App is an independent, non-commercial fan project. "WUPHF"
+        originates from
+        <em>The Office</em> (NBC/Universal) and is used here for fan purposes
+        only.
+      </footer>
+    </div>
+  </body>
+</html>

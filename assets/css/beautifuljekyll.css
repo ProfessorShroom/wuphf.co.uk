@@ -1135,3 +1135,15 @@ pre {
     display: inline-block;
   }
 }
+
+/* --- Google Play --- */
+
+.google-play-badge {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+}
+
+.badge-wrap {
+  text-align: center;
+}
