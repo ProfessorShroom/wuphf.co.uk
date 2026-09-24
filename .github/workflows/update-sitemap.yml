@@ -26,7 +26,14 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: true
+          # bundler-cache is left off deliberately: this repo has an
+          # Appraisals file (theme-gem test infra), and setup-ruby's
+          # auto-caching tries to `bundle exec appraisal install` every
+          # appraisal gemfile, one of which conflicts with our own Gemfile.
+          # Plain `bundle install` below avoids that entirely.
+
+      - name: Install dependencies
+        run: bundle install
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
