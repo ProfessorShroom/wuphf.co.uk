@@ -1,0 +1,38 @@
+name: Strip Image Metadata
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'assets/img/**.png'
+      - 'assets/img/**.jpg'
+      - 'assets/img/**.jpeg'
+      - 'assets/img/**.gif'
+      - 'assets/img/**.webp'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  strip-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install ExifTool
+        run: sudo apt-get update && sudo apt-get install -y libimage-exiftool-perl
+
+      - name: Run removeImgMetadata.sh
+        run: |
+          chmod +x scripts/removeImgMetadata.sh
+          ./scripts/removeImgMetadata.sh
+
+      - name: Commit changes if any images were modified
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/img
+          git diff --cached --quiet || git commit -m "Strip image metadata"
+          git push
